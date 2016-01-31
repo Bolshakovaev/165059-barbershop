@@ -2,11 +2,136 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Барбершоп</title>
+    <title>Барбершоп «Бородинский»</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive">Базовый HTML и CSS</a>».</p>
-
-  </body>
+    <header class="main-header">
+      <div class="container">
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+            <li>
+              <a href="#">Прайс-лист</a>
+            </li>
+            <li>
+              <a href="#">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-block">
+          <a class="login" href="#">Вход</a>
+        </div>
+      </div>
+    </header>
+      <main class="content">
+      <h1 class="title">Средства для ухода</h1>
+      <ul class="menu">
+          <li>
+              <a href="">главная</a>
+          </li>
+          <li>&#9670;</li>
+          <li><a href="">магазин</a></li>
+          <li>&#9670;</li>
+          <li class="current"><a href="">средства для ухода</a></li>
+      </ul>
+          <form action="#">
+            <fieldset class="product-info"><!--класс нужно задавать у формы или у филдсет? есть ли принципиальная разница, учитывая, что два филдсет выглядят одинаково?-->
+                <legend>производители:</legend>
+                <input type="checkbox" id="baxter" name="brand" checked><label for="baxter">baxter of california</label> <!-- какой надо задать тип, чтобы были крестики вместо галочек при выборе элементов?-->
+                <input type="checkbox" id="natty" name="brand"><label for="natty">mr natty</label> 
+                <input type="checkbox" id="suavecito" name="brand" checked><label for="suavecito">suavecito</label> 
+                <input type="checkbox" id="malin" name="brand"><label for="malin">malin+goetz</label> 
+                <input type="checkbox" id="murrays" name="brand"><label for="murrays">murray&#8242;s</label> 
+                <input type="checkbox" id="american" name="brand" checked><label for="american">american crew</label>                               
+            </fieldset>
+            <fieldset class="product-info"> 
+                <legend>группы товаров</legend>
+                <input type="radio" id="shaver" name="product"><label for="shaver">бритвенные принадлежности</label> 
+                <input type="radio" id="makeup" name="product" checked><label for="makeup">средства для ухода</label> 
+                <input type="radio" id="accessory" name="product"><label for="accessory">аксессуары</label>                                              
+             </fieldset>
+               <input type="submit" value="Показать"> <!--submit должен быть внутри fieldset?-->
+          </form>
+        <article class="product-description">
+            <a href="#"></a>
+             <img src="#" alt="baxter">
+            </a>
+            <span class="product-name">набор для путешествий  &#171;baxter of california&#187;</span>
+          <div class="price">  2 900 руб.</div>                      
+              <a href="#" type="btn">купить</a>
+        </article>  
+        <article class="product-description">
+            <a href="#"></a>
+             <img src="#" alt="baxter-cond">
+            </a>
+            <span class="product-name">увлажнящий кондиционер  &#171;baxter of california&#187;</span>
+          <div class="price">  750 руб.</div>                      
+              <a href="#" type="btn">купить</a>
+        </article>  
+        <article class="product-description">
+            <a href="#"></a>
+             <img src="#" alt="suavecito">
+            </a>
+            <span class="product-name">гель для волос &#171;suavecito&#187;</span>
+          <div class="price">  290 руб.</div>                      
+              <a href="#" type="btn">купить</a>
+        </article>  
+        <article class="product-description">
+            <a href="#"></a>
+             <img src="#" alt="american crew">
+            </a>
+            <span class="product-name">глина для укладки волос &#171;american crew&#187;</span>
+          <div class="price">  500 руб.</div>                      
+              <a href="#" type="btn">купить</a>
+        </article>  
+        <article class="product-description">
+            <a href="#"></a>
+             <img src="#" alt="american crew">
+            </a>
+            <span class="product-name">гель для волос  &#171;american crew&#187;</span>
+          <div class="price">  300 руб.</div>                      
+              <a href="#" type="btn">купить</a>
+        </article>  
+        <article class="product-description">
+            <a href="#"><img src="#" alt="baxter"></a> <!--так правильно задавать увеличивающиеся фото?-->
+            <span class="product-name">набор для бритья  &#171;baxter of california&#187;</span>
+          <div class="price">  3 900 руб.</div>                      
+            <a href="#" type="btn">купить</a>
+        </article>  
+        <div class="pages">
+            <a href="#">1</a>
+            <a href="#" class="current">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+        </div>
+      </main>
+<footer class="main-footer">
+      <div class="container">
+        <section class="footer-contacts">
+          Барбершоп «Бородинский»<br>
+          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+          <a href="#">Как нас найти?</a><br>
+          Телефон: +7 (812) 666-02-66
+        </section>
+        <section class="footer-social">
+          <p>Давайте дружить!</p>
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </section>
+        <section class="footer-copyright">
+          <p>Разработано:</p>
+          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+        </section>
+      </div>
+    </footer>
+</body>
 </html>
