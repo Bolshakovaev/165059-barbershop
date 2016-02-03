@@ -1,0 +1,16 @@
+body {
+    font-size: 16px;
+     font-family: "PT Sans", "Arial", serif;
+font-weight: bold;
+color: white;
+line-height: normal; 
+}
+.product-full-description {
+   line-height: 24px;  
+    font-size: 14px;
+    color: black;
+}
+.footer-contact {
+   line-height: 24px;  
+    font-size: 14px; 
+}
