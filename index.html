@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Барбершоп «Бородинский»</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
-      <div class="container">
+    <header class="main-header ">
+      <div class="container clearfix">
         <a href="#" class="logo">
              <img src="img/Logo.png" alt="logo">
           </a>
@@ -46,7 +47,7 @@
           <li class="current"><a href="">средства для ухода</a></li>
       </ul>
           <form action="#">
-            <fieldset class="product-info"><!--класс нужно задавать у формы или у филдсет? есть ли принципиальная разница, учитывая, что два филдсет выглядят одинаково?-->
+            <fieldset class="product-info">
                 <legend>производители:</legend>
                 <input type="checkbox" id="baxter" name="brand" checked><label for="baxter">baxter of california</label> 
                 <input type="checkbox" id="natty" name="brand"><label for="natty">mr natty</label> 
@@ -63,9 +64,10 @@
              </fieldset>
                <input type="submit" value="Показать"> 
           </form>
-        <article class="product-description">
+       <div class="clearfix">
+          <article class="product-description">
             <a href="#">
-             <img src="img/product1.jpg" alt="baxter">
+             <img src="img/baxter3.jpg" alt="baxter">
             </a>
             <span class="product-name">набор для путешествий</span><span class="baxter-name">  &#171;baxter of california&#187;</span>
           <div class="price">  2 900 руб.</div>                      
@@ -109,6 +111,7 @@
           <div class="price">  3 900 руб.</div>                      
             <a href="#" class="btn">купить</a>
         </article>  
+          </div>
         <div class="pages">
             <a href="#">1</a>
             <a href="#" class="current">2</a>
@@ -117,7 +120,7 @@
         </div>
       </main>
 <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <section class="footer-contacts">
           Барбершоп «Бородинский»<br>
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
