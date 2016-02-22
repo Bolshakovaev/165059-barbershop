@@ -3,8 +3,6 @@ body {
      font-family: "PT Sans", Arial, serif;
 font-weight: bold;
 color: white;
-line-height: normal;
-    
 }
 .clearfix::after {
   content: "";
@@ -42,16 +40,24 @@ line-height: normal;
     background-color: darkblue;
 }
 .product-info {
+    float: left;
     width: 230px;
     background-color: fuchsia;
 }
-.product-description { /*Саша, а поднять их вверх к уровню производители я смогу с помощью позиционирования? И надо ли мне добиваться тут разбивки - 3 в верхнем ряду и 3 в нижнем? */
+.product-table {
+    float:left;  
+    
+    
+}
+.product-description { 
     float:left;
     background-color: chocolate;
     width: 220px;
     margin-right: 20px;
     margin-bottom: 20px;
 }
+
+
 .product-description:last-child { /*это нужно?*/
 margin-right: 0px;
 }
